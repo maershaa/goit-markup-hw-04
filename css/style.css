@@ -227,6 +227,10 @@ margin-left: 40px;
 }
 
 /* CUSTOMERS */
+.customers .title {
+  line-height: 1.1;
+}
+
 .cutomers-list {
   display: flex;
   margin-right: auto;
