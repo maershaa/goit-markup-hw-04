@@ -306,7 +306,7 @@ margin-left: 40px;
 .footer-center-side .title {
   color: var(--page-background-color);
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .footer-socialinks {
   display: flex;
