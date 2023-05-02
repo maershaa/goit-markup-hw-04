@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>goit-markup-hw-03</title>
+  <title>goit-markup-hw-04</title>
 
   <!-- Подключаем нормализатор -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
@@ -71,22 +71,46 @@
 
         <ul class="goals-list list">
           <li class="item icon-antenna">
+            <div class="goals-list-icon">
+              <svg class="goals-icon">
+                <use href="./images/icons.svg#icon-antenna">
+                </use>
+              </svg>
+            </div>
             <h3 class="title">Strategy</h3>
             <p class="text">Our goal is to identify the business
               problem to walk away with the perfect and creative solution. </p>
           </li>
           <li class="item icon-clock">
+            <div class="goals-list-icon">
+              <svg class="goals-icon">
+                <use href="./images/icons.svg#icon-clock">
+                </use>
+              </svg>
+            </div>
             <h3 class="title">Punctuality</h3>
             <p class="text"> Bring the key message to the brand's audience for the best price within the shortest
               possible
               time. </p>
           </li>
           <li class="item icon-diagram">
+            <div class="goals-list-icon">
+              <svg class="goals-icon">
+                <use href="./images/icons.svg#icon-diagram">
+                </use>
+              </svg>
+            </div>
             <h3 class="title ">Diligence</h3>
             <p class="text">Research and confirm brands that present the strongest digital growth opportunities and
               minimize risk.</p>
           </li>
           <li class="item icon-astronaut">
+            <div class="goals-list-icon">
+              <svg class="goals-icon">
+                <use href="./images/icons.svg#icon-astronaut">
+                </use>
+              </svg>
+            </div>
             <h3 class="title">Technologies</h3>
             <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for
               problem-solving.</p>
@@ -220,29 +244,61 @@
       </div>
     </section>
 
-    <section class="section customers">
+    <section class="section container customers">
 
       <h2 class="section-title">Customers</h2>
 
       <ul class="cutomers-list list">
         <li class="customers-item">
-          <a class="customers-link"> </a>
+          <a class="customers-link link" href="">
+            <svg class="customers-link-icon">
+              <use href="./images/icons.svg#icon-yoco">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="customers-item">
+          <a class="customers-link link" href="">
+            <svg class="customers-link-icon">
+              <use href="./images/icons.svg#icon-tagline">
+              </use>
+            </svg>
+          </a>
         </li>
         <li class="customers-item">
-          <a class="customers-link"> </a>
+          <a class="customers-link link" href="">
+            <svg class="customers-link-icon">
+              <use href="./images/icons.svg#icon-company">
+              </use>
+            </svg>
+          </a>
         </li>
         <li class="customers-item">
-          <a class="customers-link"> </a>
+          <a class="customers-link link" href="">
+            <svg class="customers-link-icon">
+              <use href="./images/icons.svg#icon-foster">
+              </use>
+            </svg>
+          </a>
         </li>
         <li class="customers-item">
-          <a class="customers-link"> </a>
+          <a class="customers-link link" href="">
+            <svg class="customers-link-icon">
+              <use href="./images/icons.svg#icon-brand">
+              </use>
+            </svg>
+          </a>
         </li>
         <li class="customers-item">
-          <a class="customers-link"> </a>
+          <a class="customers-link link" href="">
+            <svg class="customers-link-icon">
+              <use href="./images/icons.svg#icon-tag-line-square">
+              </use>
+            </svg>
+          </a>
         </li>
-        <li class="customers-item">
-          <a class="customers-link"> </a>
-        </li>
+
       </ul>
 
 
@@ -253,13 +309,56 @@
   <!-- Для нижней часті (подвала) странички -->
   <footer class="footer">
     <div class="container">
-      <a href="./index.html" class="logo-style link"> Web
-        <span class="footer-logo">Studio</span> </a>
-      <p class="text">
-        Increase the flow of customers and sales for your business with digital
-        marketing &AMP; growth solutions.
-        <!--Вместо & ставим -  значек & + его код AMP; -->
-      </p>
+      <div class="footer-left-side">
+        <a href="./index.html" class="logo-style link"> Web
+          <span class="footer-logo">Studio</span> </a>
+        <p class="text">
+          Increase the flow of customers and sales for your business with digital
+          marketing &AMP; growth solutions.
+          <!--Вместо & ставим -  значек & + его код AMP; -->
+        </p>
+      </div>
+
+
+
+      <div class="footer-center-side">
+        <h3 class="title">Social media</h3>
+        <ul class="footer-socialinks list">
+          <li class="footer-socialinks-item">
+            <a class="footer-socialinks-link link" href="">
+              <svg class="socialinks-item-icon">
+                <use href="./images/icons.svg#icon-instagram">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socialinks-item">
+            <a class="footer-socialinks-link link" href="">
+              <svg class="socialinks-item-icon">
+                <use href="./images/icons.svg#icon-twitter">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socialinks-item">
+            <a class="footer-socialinks-link link" href="">
+              <svg class="socialinks-item-icon">
+                <use href="./images/icons.svg#icon-facebook">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socialinks-item">
+            <a class="footer-socialinks-link link" href="">
+              <svg class="socialinks-item-icon">
+                <use href="./images/icons.svg#icon-linkedin">
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </footer>
 </body>

@@ -1,26 +1,26 @@
 /* ОБЩИЙ СТИЛЬ ДЛЯ ВСЕХ СТРАНИЦ */
 
 :root {
-    /* IRIS */
-    --primary-text-color: #4D5AE5;
+  /* IRIS */
+  --primary-text-color: #4d5ae5;
 
-    /* OCEAN */
-    --primary-text-color-active: #404BBF;
+  /* OCEAN */
+  --primary-text-color-active: #404bbf;
 
-    /* NAVY_BLUE */
-    --title-text-color: #2e2f42;
+  /* NAVY_BLUE */
+  --title-text-color: #2e2f42;
 
-    /* SLATE */
-    --body-text-color: #434455;
+  /* SLATE */
+  --body-text-color: #434455;
 
-    /* CORNFLOVER */
-    --accent-color: #E7E9FC;
+  /* CORNFLOVER */
+  --accent-color: #e7e9fc;
 
-    /* _WHITE_ */
-    --page-background-color: #FFFFFF;
+  /* _WHITE_ */
+  --page-background-color: #ffffff;
 
-    /* CLOUD */
-    --footer-text-color: #F4F4FD;
+  /* CLOUD */
+  --footer-text-color: #f4f4fd;
 }
 
 /*  Не нужно ставить так как поставили уже нормализатор*/
@@ -34,97 +34,97 @@ html {
     box-sizing: inherit;
 } */
 
-
 .container {
+  /* 30px =боковые отступы и 1128px = ширина странички */
+  width: 1158px;
 
-    /* 30px =боковые отступы и 1128px = ширина странички */
-width: 1158px;
+  /* Задаем эти боковые отступы по 15px (в совокупности 30px */
+  padding-left: 15px;
+  padding-right: 15px;
 
-/* Задаем эти боковые отступы по 15px (в совокупности 30px */
-padding-left: 15px;
-padding-right: 15px;
-
-margin: 0 auto;
+  margin: 0 auto;
 }
 
-
 body {
-    color: #434455;
-    background-color: var(--page-background-color);
+  color: #434455;
+  background-color: var(--page-background-color);
 
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
-/* Не нужно ставить так как поставили уже нормализатор
+  /* Не нужно ставить так как поставили уже нормализатор
     margin: 0; */
 }
 
 h2,
 h3 {
-    color: var(--body-text-color);
+  color: var(--body-text-color);
 }
 
-
-h1,h2,h3,h4,h5,h6,p,ul {
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
+  display: block;
 }
 /* Убираем нумерацию и иное маркирование в списках */
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Убираем подчеркивание у ссылок */
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header {
-border: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
 }
 
-
 .header-style {
-display: flex;
-margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
 
 .main-nav {
-    display: flex;
-    align-items: center;
-
-    
+  display: flex;
+  align-items: center;
 }
 
 .logo-style {
-    margin-right: 76px;
+  margin-right: 76px;
 
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 0.03em;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 .nav-logo {
-    color: var(--title-text-color);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16px;
+  color: var(--title-text-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16px;
 }
 .site-nav {
-    display: flex;
+  display: flex;
 
-    /* для визначення відступів між пунктами меню 
+  /* для визначення відступів між пунктами меню 
     (можна використовувати margin-right: 40px для тега li 
     у класі, для останього li використовуємо 
     margin-right: 0 для обнулення відступів) 
@@ -132,11 +132,10 @@ margin: 0 auto;
     gap: 40px; */
 }
 
-
 /* Задать отстпуы меню навигации можно 
 таким способом или способом закоментирвоанным ниже */
-.site-nav .item:not(:last-child){
-margin-right: 40px;
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /* .site-nav .item {
@@ -148,67 +147,58 @@ margin-right: 40px;
     margin-right: 0;
 } */
 
-
-
-
-
 .site-nav .link {
-    /* делаем область на которую кликать больше */
-    display: block;
-    padding: 24px 0;
+  /* делаем область на которую кликать больше */
+  display: block;
+  padding: 24px 0;
 
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--title-text-color);
-        font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  font-family: "Roboto", sans-serif;
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #404bbf;
+  color: #404bbf;
 }
 /* Стиль для элементов списка (навигация) 
 ВО ВРЕМЯ НАХОЖДЕНИЯ НА ИМЕННО ЭТОЙ СТРАНИЧКЕ*/
 .site-nav .link.current {
-    color: var(--primary-text-color-active);
+  color: var(--primary-text-color-active);
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке */
 .header-address {
-    margin-left: auto;
+  margin-left: auto;
 
-    font-family: inherit;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
 
-
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 /* Задаем флекс для списка (номер телеона и почта)  */
 .header-address-list {
-    display: flex;
-
-
+  display: flex;
 }
 
 .header-address-list .item {
-    margin-right: 40px;
-
+  margin-right: 40px;
 }
 
 .header-address-list .item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке) */
 .header-address .link {
-    letter-spacing: 0.02em;
-    color: var(--body-text-color);
-
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
 }
 
 /* Применяем отступ для кнопок c телефоном и почтой
@@ -217,173 +207,237 @@ margin-right: 40px;
 margin-left: 40px;
 } */
 
-
-
 /* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
 .header-address .link:hover,
 .header-address .link:focus {
-color: #404bbf;
+  color: #404bbf;
 }
-
-
 
 /* Стиль для всех элементов р */
 .text {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
+/* CUSTOMERS */
+.cutomers-list {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.customers-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
 
+.customers-item:not(:last-child) {
+  margin-right: 22px;
+}
+.customers-link-icon {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+}
 
+.customers-link-icon {
+  fill: #8e8f99;
+}
+.customers-link-icon:hover,
+.customers-link-icon:focus {
+  fill: var(--primary-text-color-active);
+}
 
-
-
+.customers-link {
+  padding-top: 70px;
+}
 /* Footer */
 .footer {
-    background-color: var(--title-text-color);
-    color: var(--footer-text-color);
+  background-color: var(--title-text-color);
+  color: var(--footer-text-color);
 
-    padding: 100px 0;
+  padding: 100px 0;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-left-side {
+  margin-right: 120px;
 }
 
 .footer-logo {
-    color: var(--footer-text-color);
-    margin-bottom: 16px;
+  color: var(--footer-text-color);
+  margin-bottom: 16px;
 }
 
 .footer .logo-style {
-    display: inline-block;
-    margin-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer .text {
-    display: flex;
-    width: 25%;
+  display: flex;
+  width: 264px;
 
-    text-align: left;
-
+  text-align: left;
 }
 
+.footer-center-side .title {
+  color: var(--page-background-color);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.footer-socialinks {
+  display: flex;
+}
+.footer-socialinks-item {
+  display: flex;
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+}
+
+.footer-socialinks-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer-socialinks-item:hover,
+.footer-socialinks-item:focus {
+  background-color: #31d0aa;
+}
+
+.socialinks-item-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socialinks-link {
+  display: inline-block;
+}
 /* СТИЛИ ГЛАВНОЙ СТРАНИЦЫ */
 
 /* BUTTON */
-.main-button
- {
-    background-color: var(--primary-text-color);
-    color: var(--page-background-color);
+.main-button {
+  background-color: var(--primary-text-color);
+  color: var(--page-background-color);
 
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 500;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
 
-    cursor:pointer;
+  cursor: pointer;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
 
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    padding: 16px 32px;
-    
-    margin-right: auto;
-    margin-left: auto;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
 
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-button:hover,
 .main-button:focus {
-    background-color: var(--primary-text-color-active);
+  background-color: var(--primary-text-color-active);
 }
-
 
 /* СЕКЦИЯ 1 (главная)*/
 .hero {
-    padding: 188px 0;
+  padding: 188px 0;
 
-    text-align: center;
+  text-align: center;
 
-    max-width: 1440px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
+  background-color: var(--title-text-color);
 
-    background-color: var(--title-text-color);
-    background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7), 
-            rgba(46, 47, 66, 0.7),
-        url(../images/people-office.jpg));
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+
+  background-position: center;
+  background-size: cover;
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.no-padding{
-    padding-top: 0;
-    padding-bottom: 120px;
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 120px;
 }
-    
-
 
 /* Стиль главного заголовка страницы (h1) */
 .hero-title {
-    color: var(--page-background-color);
-        font-size: 56px;
-        line-height: 1.07;
-        text-align: center;
-        letter-spacing: 0.02em;
+  color: var(--page-background-color);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 
-        max-width: 496px;
-        margin-top: 0;
-        margin-bottom: 48px;
-        margin-right: auto;
-        margin-left: auto;
+  max-width: 496px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 
 /* СЕКЦИЯ 2 */
 .goals-list p {
-    text-align: left;
+  text-align: left;
 }
 /* Общий стиль для аналогчиных заголовков секции  2 и 4 */
 .goals-list .title,
 .team-member .title,
-.portfolio-items-header  {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--title-text-color);
+.portfolio-items-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 
-        margin-top: 0;
-        margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .team-member .title {
-    text-align: center;
+  text-align: center;
 }
 
 /* Общий стиль для аналогчиных абзацев секции  2 и 4 */
 .goals-list p,
 .team-list p,
-.portfolio-items p {      
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--body-text-color);
-        margin-top: 0;
-        margin-bottom: 0;
+.portfolio-items p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Общий стиль flexBox для аналогчиных списков */
@@ -391,11 +445,11 @@ letter-spacing: 0.02em;
 .screens-list,
 .team-list,
 .porfolio-nav {
-display: flex;
+  display: flex;
 }
 
 .goals-list .item {
-    width: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 /* Общий стиль внешних отступов margin для аналогчиных списков */
 .goals-list .item:not(:last-child),
@@ -405,244 +459,227 @@ display: flex;
   margin-right: 24px;
 }
 
-.goals-list .item::before {
-    /* так как список строчный элемент то сразу задаем свойство inline-block */
-        display: block;
-
-        background: var(--footer-text-color);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        height: 112px;
-        margin-bottom: 8px;
-        content: " ";
-        
-        border-radius: 4px;
-
-        }
-
-.goals-list .icon-antenna::before {
-background-image: url(../images/antenna.svg);
+.goals-list-icon {
+  display: flex;
+  background: var(--footer-text-color);
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  align-items: center;
 }
 
-.goals-list .icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.goals-list .icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.goals-list .icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
+.goals-icon {
+  height: 64px;
 }
 
 /* СЕКЦИЯ 3 */
 
 .section .section-title {
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-text-transform: capitalize;
-color: var(--title-text-color);
-letter-spacing: 0.02em;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  letter-spacing: 0.02em;
 
-margin-top: 0;
-margin-bottom: 72px;
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 .screens {
-    display: flex;
+  display: flex;
 }
 
 .screens .item:not(:last-child) {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
-
-
-
-
+.screens-list .item {
+  border: 1px solid var(--accent-color);
+}
 /* СЕКЦИЯ 4 */
 .team {
-    background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 
 /* Стили для элементов ли с карточками членов команды */
 .team-member {
-background-color: #FFFFFF;
-
-border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member > .member-and-position {
- padding: 32px 16px;   
-
+  padding: 32px 16px;
 }
 
 .team .text {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 /* Стили для ярлычков социальных сетей */
 .socialinks {
-    display: inline-flex;
+  display: inline-flex;
 }
 
-.socialinks-link-instagram::before {
-    content: " ";
-    background: #4D5AE5;
-    background-image: url(../images/instagram.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 16px; 
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    border-radius: 50%;
-    
-    /* так как список строчный элемент то сразу задаем свойство inline-block */
-    display: inline-block;
+.socialinks-link-instagram {
+  content: " ";
+  background: var(--primary-text-color);
+  background-image: url(../images/instagram.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  border-radius: 50%;
+
+  /* так как список строчный элемент то сразу задаем свойство inline-block */
+  display: inline-block;
 }
 
-.socialinks-link-twitter::before {
-    content: " ";
-    background: #4D5AE5;
-    background-image: url(../images/twitter.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 16px;
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    border-radius: 50%;
+.socialinks-link-twitter {
+  content: " ";
+  background: var(--primary-text-color);
+  background-image: url(../images/twitter.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  border-radius: 50%;
 
-    /* так как список строчный элемент то сразу задаем свойство inline-block */
-    display: inline-block;
+  /* так как список строчный элемент то сразу задаем свойство inline-block */
+  display: inline-block;
 }
 
-.socialinks-link-facebook::before {
-    content: " ";
-    background: #4D5AE5;
-    background-image: url(../images/facebook.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 16px;
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    border-radius: 50%;
+.socialinks-link-facebook {
+  content: " ";
+  background: var(--primary-text-color);
+  background-image: url(../images/facebook.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  border-radius: 50%;
 
-    /* так как список строчный элемент то сразу задаем свойство inline-block */
-    display: inline-block;
+  /* так как список строчный элемент то сразу задаем свойство inline-block */
+  display: inline-block;
 }
 
-.socialinks-link-linkedin::before {
-    content: " ";
-    background: #4D5AE5;
-    background-image: url(../images/linkedin.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 16px;
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
-    border-radius: 50%;
+.socialinks-link-linkedin {
+  content: " ";
+  background: var(--primary-text-color);
+  background-image: url(../images/linkedin.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  border-radius: 50%;
 
-    /* так как список строчный элемент то сразу задаем свойство inline-block */
-    display: inline-block;
+  /* так как список строчный элемент то сразу задаем свойство inline-block */
+  display: inline-block;
 }
+
+.socialinks .link:hover,
+.socialinks .link:focus {
+  background-color: var(--primary-text-color-active);
+}
+
 /* СТИЛИ СТРАНИЦЫ ПОРТФОЛИО */
 .porfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
-.potfolio-nav-buttons  {
-    color: #4d5ae5;
-    background-color: #F4F4FD;
+.potfolio-nav-buttons {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
 
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 500;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.04em;
-        line-height: 1.5;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
 
-        cursor: pointer;
+  cursor: pointer;
 
-        border: 1px solid #E7E9FC;
-        border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 
-        padding: 12px 24px;
-    }
-  
+  padding: 12px 24px;
+}
 
 .potfolio-nav-buttons:hover,
-.potfolio-nav-buttons:focus{
-    color: #FFFFFF;
-    background-color: var(--primary-text-color-active);
+.potfolio-nav-buttons:focus {
+  color: #ffffff;
+  background-color: var(--primary-text-color-active);
 
-    border: 1px solid transparent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .porfolio-nav {
-justify-content: center;
-margin-bottom: 72px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 /* Задаем флекс для списка с фотками. Необходимо сделать 3 на строке,
 а остальныеи перенести ниже, а так же сделать внешние отступы вправо
 по 24px на все фотки кроме крайних в ряду */
 .portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
- .portfolio-items .item {
-width:360px;
- }
+.portfolio-items .item {
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
 
-  .portfolio-items .item {
-    
-     margin-right: 24px;
-     margin-bottom: 48px;
+  border: 1px solid #e7e9fc;
+  background: var(--page-background-color);
+}
 
-    background: #FFFFFF;
-    
- }
+.portfolio-items .item:hover,
+.portfolio-items .item:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
-  .portfolio-items .item:nth-child(3n+3) {
-      margin-right: 0;
+.portfolio-items .item:nth-child(3n + 3) {
+  margin-right: 0;
+}
 
-  }
+.portfolio-items .examples {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 
- .portfolio-items .examples {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-
- }
-
- /* Убираем у каждого крайнего справа элемента
+/* Убираем у каждого крайнего справа элемента
  списка с фото margin righy */
- .portfolio-items .item:nth-child(3n) {
-     margin-right: 0;
- }
+.portfolio-items .item:nth-child(3n) {
+  margin-right: 0;
+}
 
 /* Убираем у нижнеего ряда со списком фото margin bottom */
- .portfolio-items .item:nth-last-child(-n+3) {
-    padding-bottom: 0;
-     margin-bottom: 0;
- }
-
-
-
-
+.portfolio-items .item:nth-last-child(-n + 3) {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
