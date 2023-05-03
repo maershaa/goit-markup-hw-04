@@ -242,15 +242,6 @@ margin-left: 40px;
   height: 88px;
 }
 
-.customers-item:not(:last-child) {
-  margin-right: 22px;
-}
-.customers-link-icon {
-  width: 168px;
-  height: 88px;
-  padding: 16px 32px;
-}
-
 .customers-link-icon {
   fill: currentColor;
 }
